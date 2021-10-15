@@ -38,10 +38,11 @@ namespace TheSuperMagicalFactory
         public bool IsComponentsFit(List<Inventory> items)
         {
             bool isEnough = false;
-            foreach (var entry in items)
+            foreach (var entry in ItemsToCheck)
             {
-                isEnough = entry.Value 
+                isEnough = entry.Value <= items.Count(m => m.Name.Contains(entry.Key));
             }
+            return isEnough;
         }
     }
 }
