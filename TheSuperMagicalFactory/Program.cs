@@ -16,6 +16,11 @@ namespace TheSuperMagicalFactory
             while (programIsActive)
             {
                 warehouse.ShowInventoryList();
+
+                Console.WriteLine("Lets sent stock from warehouse to factory");
+                List<Inventory> itemsToTransfer = warehouse.MoveAll();
+
+
             }
 
         }
