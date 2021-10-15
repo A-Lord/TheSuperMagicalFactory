@@ -41,6 +41,15 @@ namespace TheSuperMagicalFactory
             foreach (var entry in ItemsToCheck)
             {
                 isEnough = entry.Value <= items.Count(m => m.Name.Contains(entry.Key));
+                //Lambdas  (input-parameters) => expression
+                //  Func<int, bool> equalsFive = x => x == 5; the equalsFive is true if the int is 5;
+                //
+                //                 ínt x = 5;
+                //                 if(x == 5)
+                //                 equalsFive = true;
+                //                                  
+
+
             }
             return isEnough;
         }

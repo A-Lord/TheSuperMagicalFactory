@@ -2,11 +2,22 @@
 
 namespace TheSuperMagicalFactory
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Lets start!");
+
+            bool programIsActive = true;
+            var warehouse = new Warehouse();
+            var factory = new Factory();
+
+            while (programIsActive)
+            {
+                warehouse.ShowInventoryList();
+            }
+
         }
     }
 }

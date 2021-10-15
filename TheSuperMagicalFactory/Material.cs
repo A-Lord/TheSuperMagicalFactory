@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace TheSuperMagicalFactory
 {
-    public class Factory : PlayerStorage
+    public class Material : Inventory
     {
-        protected List<Blueprint>
+        public Material(string name) : base(name)
+        {
+            Name = name;
+        }
     }
 }
